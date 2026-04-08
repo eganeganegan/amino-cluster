@@ -350,7 +350,7 @@ export default function AminoCluster() {
               Amino Cluster
             </h1>
             <p className="mt-3 max-w-2xl bg-p5-white/90 px-4 py-3 font-sans text-sm font-semibold uppercase tracking-[0.25em] text-p5-black shadow-[6px_6px_0_#000] md:text-base">
-              Machine learning discovers amino acid groups — no labels given.
+              Machine learning discovers amino acid groups with no labels given.
             </p>
           </div>
           <div className="border-2 border-p5-black bg-p5-black px-4 py-2 text-sm uppercase tracking-[0.24em] text-p5-white shadow-[6px_6px_0_#fff]">
