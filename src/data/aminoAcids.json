@@ -1,0 +1,222 @@
+[
+  {
+    "name": "Glycine",
+    "code": "G",
+    "code3": "GLY",
+    "group": "Nonpolar Aliphatic",
+    "mw": 57.05,
+    "pi": 5.97,
+    "hydropathy": -0.4,
+    "vdwVolume": 60,
+    "polarity": 0.0
+  },
+  {
+    "name": "Alanine",
+    "code": "A",
+    "code3": "ALA",
+    "group": "Nonpolar Aliphatic",
+    "mw": 71.08,
+    "pi": 6.01,
+    "hydropathy": 1.8,
+    "vdwVolume": 67,
+    "polarity": 8.1
+  },
+  {
+    "name": "Valine",
+    "code": "V",
+    "code3": "VAL",
+    "group": "Nonpolar Aliphatic",
+    "mw": 99.13,
+    "pi": 5.97,
+    "hydropathy": 4.2,
+    "vdwVolume": 105,
+    "polarity": 5.9
+  },
+  {
+    "name": "Leucine",
+    "code": "L",
+    "code3": "LEU",
+    "group": "Nonpolar Aliphatic",
+    "mw": 113.16,
+    "pi": 5.98,
+    "hydropathy": 3.8,
+    "vdwVolume": 124,
+    "polarity": 4.9
+  },
+  {
+    "name": "Isoleucine",
+    "code": "I",
+    "code3": "ILE",
+    "group": "Nonpolar Aliphatic",
+    "mw": 113.16,
+    "pi": 6.02,
+    "hydropathy": 4.5,
+    "vdwVolume": 124,
+    "polarity": 5.2
+  },
+  {
+    "name": "Proline",
+    "code": "P",
+    "code3": "PRO",
+    "group": "Nonpolar Aliphatic",
+    "mw": 97.12,
+    "pi": 6.30,
+    "hydropathy": -1.6,
+    "vdwVolume": 90,
+    "polarity": 8.0
+  },
+  {
+    "name": "Methionine",
+    "code": "M",
+    "code3": "MET",
+    "group": "Nonpolar Aliphatic",
+    "mw": 131.20,
+    "pi": 5.74,
+    "hydropathy": 1.9,
+    "vdwVolume": 124,
+    "polarity": 5.7
+  },
+  {
+    "name": "Phenylalanine",
+    "code": "F",
+    "code3": "PHE",
+    "group": "Aromatic",
+    "mw": 147.18,
+    "pi": 5.48,
+    "hydropathy": 2.8,
+    "vdwVolume": 135,
+    "polarity": 5.2
+  },
+  {
+    "name": "Tryptophan",
+    "code": "W",
+    "code3": "TRP",
+    "group": "Aromatic",
+    "mw": 186.21,
+    "pi": 5.89,
+    "hydropathy": -0.9,
+    "vdwVolume": 163,
+    "polarity": 5.4
+  },
+  {
+    "name": "Tyrosine",
+    "code": "Y",
+    "code3": "TYR",
+    "group": "Aromatic",
+    "mw": 163.18,
+    "pi": 5.66,
+    "hydropathy": -1.3,
+    "vdwVolume": 141,
+    "polarity": 6.2
+  },
+  {
+    "name": "Serine",
+    "code": "S",
+    "code3": "SER",
+    "group": "Polar Uncharged",
+    "mw": 87.08,
+    "pi": 5.68,
+    "hydropathy": -0.8,
+    "vdwVolume": 73,
+    "polarity": 9.2
+  },
+  {
+    "name": "Threonine",
+    "code": "T",
+    "code3": "THR",
+    "group": "Polar Uncharged",
+    "mw": 101.10,
+    "pi": 5.60,
+    "hydropathy": -0.7,
+    "vdwVolume": 93,
+    "polarity": 8.6
+  },
+  {
+    "name": "Cysteine",
+    "code": "C",
+    "code3": "CYS",
+    "group": "Polar Uncharged",
+    "mw": 103.14,
+    "pi": 5.07,
+    "hydropathy": 2.5,
+    "vdwVolume": 86,
+    "polarity": 5.5
+  },
+  {
+    "name": "Asparagine",
+    "code": "N",
+    "code3": "ASN",
+    "group": "Polar Uncharged",
+    "mw": 114.10,
+    "pi": 5.41,
+    "hydropathy": -3.5,
+    "vdwVolume": 96,
+    "polarity": 11.6
+  },
+  {
+    "name": "Glutamine",
+    "code": "Q",
+    "code3": "GLN",
+    "group": "Polar Uncharged",
+    "mw": 128.13,
+    "pi": 5.65,
+    "hydropathy": -3.5,
+    "vdwVolume": 114,
+    "polarity": 10.5
+  },
+  {
+    "name": "Histidine",
+    "code": "H",
+    "code3": "HIS",
+    "group": "Positively Charged",
+    "mw": 137.14,
+    "pi": 7.59,
+    "hydropathy": -3.2,
+    "vdwVolume": 118,
+    "polarity": 10.4
+  },
+  {
+    "name": "Lysine",
+    "code": "K",
+    "code3": "LYS",
+    "group": "Positively Charged",
+    "mw": 128.17,
+    "pi": 9.74,
+    "hydropathy": -3.9,
+    "vdwVolume": 135,
+    "polarity": 11.3
+  },
+  {
+    "name": "Arginine",
+    "code": "R",
+    "code3": "ARG",
+    "group": "Positively Charged",
+    "mw": 156.19,
+    "pi": 10.76,
+    "hydropathy": -4.5,
+    "vdwVolume": 148,
+    "polarity": 10.5
+  },
+  {
+    "name": "Aspartate",
+    "code": "D",
+    "code3": "ASP",
+    "group": "Negatively Charged",
+    "mw": 115.09,
+    "pi": 2.85,
+    "hydropathy": -3.5,
+    "vdwVolume": 91,
+    "polarity": 13.0
+  },
+  {
+    "name": "Glutamate",
+    "code": "E",
+    "code3": "GLU",
+    "group": "Negatively Charged",
+    "mw": 129.12,
+    "pi": 3.15,
+    "hydropathy": -3.5,
+    "vdwVolume": 109,
+    "polarity": 12.3
+  }
+]

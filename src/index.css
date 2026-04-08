@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  #root {
+    background: transparent !important;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply min-h-screen overflow-x-hidden bg-p5-red font-oswald text-p5-white antialiased;
+    line-height: 1.5;
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.12), transparent 22%),
+      radial-gradient(#000000 15%, transparent 16%),
+      radial-gradient(#000000 15%, transparent 16%);
+    background-size: auto, 20px 20px, 20px 20px;
+    background-position: 0 0, 0 0, 10px 10px;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  [role='button']:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 4px;
+    box-shadow: 0 0 0 4px #000000;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    * {
+      cursor: none !important;
+    }
+  }
+
+  ::selection {
+    background: #000000;
+    color: #ffffff;
+  }
+
+  #custom-cursor {
+    position: fixed;
+    z-index: 9999;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #000000;
+    background: #ffffff;
+    pointer-events: none;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    box-shadow: 0 0 18px rgba(228, 0, 15, 0.65);
+    transition: transform 0.12s ease-out;
+  }
+
+  #cursor-ring {
+    position: fixed;
+    z-index: 9998;
+    width: 42px;
+    height: 42px;
+    border: 2px solid rgba(255, 255, 255, 0.85);
+    border-radius: 9999px;
+    background: rgba(228, 0, 15, 0.12);
+    pointer-events: none;
+    mix-blend-mode: screen;
+  }
+
+  @media (pointer: coarse), (prefers-reduced-motion: reduce) {
+    * {
+      cursor: auto !important;
+    }
+
+    #custom-cursor,
+    #cursor-ring {
+      display: none !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .scan-panel {
+    @apply relative overflow-hidden;
+  }
+
+  .scan-panel::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(255, 255, 255, 0.05) 48%,
+      rgba(228, 0, 15, 0.16) 50%,
+      transparent 52%,
+      transparent 100%
+    );
+    animation: scanSweep 2.8s linear infinite;
+    pointer-events: none;
+    mix-blend-mode: screen;
+  }
+
+  .scanlines {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.05) 0,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 4px
+    );
+    animation: monitorFlicker 0.18s steps(2) infinite;
+  }
+
+  .protein-viewer-frame > div,
+  .protein-viewer-frame canvas {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+  }
+}
+
+@keyframes scanSweep {
+  0% {
+    transform: translateY(-110%);
+  }
+
+  100% {
+    transform: translateY(110%);
+  }
+}
+
+@keyframes monitorFlicker {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+
+  50% {
+    opacity: 0.55;
+  }
+}
